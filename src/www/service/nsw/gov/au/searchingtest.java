@@ -6,6 +6,10 @@ import org.junit.Before;
 import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.Dimension;
@@ -19,9 +23,14 @@ public class searchingtest {
   private Map<String, Object> vars;
   JavascriptExecutor js;
   
+
+  
+  ChromeOptions chromeOptions = new ChromeOptions();
+  
   @Before
   public void setUp() throws MalformedURLException {
-    driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), DesiredCapabilities.chrome());
+	System.setProperty("webdriver.chrome.driver", ".\\Driver\\chromedriver.exe");
+	driver = new ChromeDriver();
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
   }
@@ -33,17 +42,43 @@ public class searchingtest {
   
   @Test
   public void testsearch() {
-    driver.get("https://www.service.nsw.gov.au/");
-    driver.manage().window().setSize(new Dimension(1296, 696));
-    driver.findElement(By.name("q")).click();
-    driver.findElement(By.name("q")).sendKeys("apply for a number plate");
-    driver.findElement(By.cssSelector(".form--global-search-group svg")).click();
-    driver.findElement(By.linkText("Apply to exchange existing number plates between vehicles")).click();
-    driver.findElement(By.linkText("Find locations")).click();
-    js.executeScript("window.scrollTo(0,11.333333015441895)");
-    driver.findElement(By.id("locatorTextSearch")).click();
-    driver.findElement(By.id("locatorTextSearch")).sendKeys("Sydney 2000");
-    driver.findElement(By.cssSelector(".button--xxlarge")).click();
-    driver.findElement(By.linkText("Marrickville Service Centre")).click();
+	  driver.get("https://www.service.nsw.gov.au/");
+	  driver.manage().window().setSize(new Dimension(1296, 696));
+	  driver.findElement(By.name("q")).click();
+	  driver.findElement(By.name("q")).sendKeys("apply for a number plate");
+	  driver.findElement(By.cssSelector(".form--global-search-group .button")).click();
+	  driver.findElement(By.cssSelector(".button--link")).click();
+	  driver.findElement(By.id("searchKeywords")).click();
+	  driver.findElement(By.id("searchKeywords")).sendKeys("apply for a number plate");
+	  driver.findElement(By.cssSelector(".button--xxlarge > svg")).click();
+	   {
+	     WebElement element = driver.findElement(By.cssSelector(".button--xxlarge > svg"));
+	     Actions builder = new Actions(driver);
+	     builder.moveToElement(element).perform();
+	   }
+	   {
+	     WebElement element = driver.findElement(By.tagName("body"));
+	     Actions builder = new Actions(driver);
+	     builder.moveToElement(element, 0, 0).perform();
+	   }
+	   driver.findElement(By.linkText("Find locations")).click();
+	   driver.findElement(By.id("locatorTextSearch")).click();
+	   js.executeScript("window.scrollTo(0,677.3333129882812)");
+	   driver.findElement(By.id("locatorTextSearch")).sendKeys("Sydney 2000");
+	   driver.findElement(By.cssSelector(".button--xxlarge")).click();
+	   js.executeScript("window.scrollTo(0,903.3333129882812)");
+	   js.executeScript("window.scrollTo(0,1177.3333740234375)");
+	   driver.findElement(By.linkText("Marrickville Service Centre")).click();
+	   js.executeScript("window.scrollTo(0,91.33333587646484)");
+	   {
+	     WebElement element = driver.findElement(By.linkText("browse our services"));
+	     Actions builder = new Actions(driver);
+	     builder.moveToElement(element).perform();
+	   }
+	   {
+	     WebElement element = driver.findElement(By.linkText("Plan ahead"));
+	     Actions builder = new Actions(driver);
+	     builder.moveToElement(element).perform();
+	   }
   }
 }
