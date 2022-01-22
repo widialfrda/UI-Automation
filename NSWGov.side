@@ -1,0 +1,233 @@
+{
+  "id": "d858ca1a-dbdb-435d-ad93-de2d86cfc828",
+  "version": "2.0",
+  "name": "NSWGov",
+  "url": "https://www.service.nsw.gov.au",
+  "tests": [{
+    "id": "927887c8-cfea-434d-9d2c-b7c7f5b699ef",
+    "name": "test_ApplyForNumberPlate",
+    "commands": [{
+      "id": "b3ed731b-cd78-4dc0-8060-411d4ede481f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a42d4ee-0012-40a3-b451-6582a2ef3dfd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da2bb1a9-04bc-44ad-9d90-773200c83dca",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.focus-visible", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[@id='globalAutosuggest']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5149166c-9770-4065-93b2-842665ee6633",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.focus-visible", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[@id='globalAutosuggest']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "apply for a number plate"
+    }, {
+      "id": "23f94413-9594-49ce-9b50-df0192a5e11a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form--global-search-group .button",
+      "targets": [
+        ["css=.form--global-search-group .button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0eca5d12-af44-4904-98b1-88ab711690c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancel a number plate order",
+      "targets": [
+        ["linkText=Cancel a number plate order", "linkText"],
+        ["css=.search__result:nth-child(5) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancel a number plate order')]", "xpath:link"],
+        ["xpath=//div[@id='search']/div/div/div[4]/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.sajari.com/token/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdXJwb3NlIjoiY2xpY2siLCJkZXN0aW5hdGlvbiI6Imh0dHBzOi8vd3d3LnNlcnZpY2UubnN3Lmdvdi5hdS90cmFuc2FjdGlvbi9jYW5jZWwtbnVtYmVyLXBsYXRlLW9yZGVyIiwidmFscyI6eyJjb2xsZWN0aW9uIjpbInNlcnZpY2Vuc3ciXSwiY29tcGFueSI6WyIxNTYwNDEwMzMzNTM4MDY4NDMwIl0sImZpZWxkIjpbInVybCJdLCJwcm9qZWN0IjpbIjE1NjA0MTAzMzM1MzgwNjg0MzAiXSwicS5pZCI6WyI5YjlxOWtkZzYzZTkyankzIl0sInEuc2wiOlsiNCJdLCJxLnVpZCI6WyI5YjlxOWtkZzYzZTkyankzMCJdLCJ2YWx1ZSI6WyJodHRwczovL3d3dy5zZXJ2aWNlLm5zdy5nb3YuYXUvdHJhbnNhY3Rpb24vY2FuY2VsLW51bWJlci1wbGF0ZS1vcmRlciJdfX0.B9mdr09eqeEluR9tgyzTglTe56n5SV5MvjdyT8nckwc')]", "xpath:href"],
+        ["xpath=//div[4]/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancel a number plate order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f174197f-2453-4db7-ad39-02b7bf018f5c",
+    "name": "test_Sydney_2000",
+    "commands": [{
+      "id": "f3b43350-c420-4787-b055-6c7610c4809d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f71e2861-32ff-47a4-895f-092b95ed3564",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4674b4dd-913f-42dd-9cb6-f4a78d9d79f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Find locations",
+      "targets": [
+        ["linkText=Find locations", "linkText"],
+        ["css=#block-global-header-menu li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Find locations')]", "xpath:link"],
+        ["xpath=//nav[@id='block-global-header-menu']/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/service-centre')]", "xpath:href"],
+        ["xpath=//nav/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Find locations')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ec5b04d-04ff-42e4-b3ed-59bfb4157d6a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Find locations",
+      "targets": [
+        ["linkText=Find locations", "linkText"],
+        ["css=.inline-nav .is-active", "css:finder"],
+        ["xpath=//a[contains(text(),'Find locations')]", "xpath:link"],
+        ["xpath=//nav[@id='block-global-header-menu']/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/service-centre')]", "xpath:href"],
+        ["xpath=//nav/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Find locations')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d6a8eac-2c43-4e94-9374-d653c11755cc",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Find locations",
+      "targets": [
+        ["linkText=Find locations", "linkText"],
+        ["css=.inline-nav .is-active", "css:finder"],
+        ["xpath=//a[contains(text(),'Find locations')]", "xpath:link"],
+        ["xpath=//nav[@id='block-global-header-menu']/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/service-centre')]", "xpath:href"],
+        ["xpath=//nav/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Find locations')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67ee3d74-df2b-4f2d-9a5e-3710163d1548",
+      "comment": "",
+      "command": "click",
+      "target": "id=locatorTextSearch",
+      "targets": [
+        ["id=locatorTextSearch", "id"],
+        ["css=#locatorTextSearch", "css:finder"],
+        ["xpath=//input[@id='locatorTextSearch']", "xpath:attributes"],
+        ["xpath=//div[@id='locator']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7d62c82-cf5f-443a-a584-c0daaa63c738",
+      "comment": "",
+      "command": "type",
+      "target": "id=locatorTextSearch",
+      "targets": [
+        ["id=locatorTextSearch", "id"],
+        ["css=#locatorTextSearch", "css:finder"],
+        ["xpath=//input[@id='locatorTextSearch']", "xpath:attributes"],
+        ["xpath=//div[@id='locator']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Sydney "
+    }, {
+      "id": "df49ca86-4191-4601-888e-45ddb73875e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.autocomplete__option:nth-child(1)",
+      "targets": [
+        ["css=.autocomplete__option:nth-child(1)", "css:finder"],
+        ["xpath=//ul[@id='locatorTextSearchList']/li", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Sydney 2000')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ec66b76-bb81-41fb-80fd-887ca126b3dc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Bondi Junction Service Centre",
+      "targets": [
+        ["linkText=Bondi Junction Service Centre", "linkText"],
+        ["css=.location:nth-child(4) > .location__title", "css:finder"],
+        ["xpath=//a[contains(text(),'Bondi Junction Service Centre')]", "xpath:link"],
+        ["xpath=//div[@id='locatorListView']/div/div/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/service-centre/bondi-junction-service-centre')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bondi Junction Service Centre')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f690074b-0524-422e-bf73-7bee493d4c08",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Marrickville Service Centre",
+      "targets": [
+        ["linkText=Marrickville Service Centre", "linkText"],
+        ["css=.location:nth-child(5) > .location__title", "css:finder"],
+        ["xpath=//a[contains(text(),'Marrickville Service Centre')]", "xpath:link"],
+        ["xpath=//div[@id='locatorListView']/div/div/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/service-centre/marrickville-service-centre')]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Marrickville Service Centre')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fbe0308-1e53-497b-ad4d-154144370f33",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Marrickville Service Centre",
+      "targets": [
+        ["linkText=Marrickville Service Centre", "linkText"],
+        ["css=.location:nth-child(5) > .location__title", "css:finder"],
+        ["xpath=//a[contains(text(),'Marrickville Service Centre')]", "xpath:link"],
+        ["xpath=//div[@id='locatorListView']/div/div/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/service-centre/marrickville-service-centre')]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Marrickville Service Centre')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9ad7575e-8870-4455-ba5d-a165a5bb63a9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.service.nsw.gov.au/"],
+  "plugins": []
+}
