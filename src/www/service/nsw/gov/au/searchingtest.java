@@ -10,13 +10,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 import java.net.MalformedURLException;
-import java.net.URL;
 
 public class searchingtest {
   private WebDriver driver;
@@ -44,13 +42,11 @@ public class searchingtest {
   public void testsearch() {
 	  driver.get("https://www.service.nsw.gov.au/");
 	  driver.manage().window().setSize(new Dimension(1296, 696));
+	  
 	  driver.findElement(By.name("q")).click();
 	  driver.findElement(By.name("q")).sendKeys("apply for a number plate");
 	  driver.findElement(By.cssSelector(".form--global-search-group .button")).click();
-	  driver.findElement(By.cssSelector(".button--link")).click();
-	  driver.findElement(By.id("searchKeywords")).click();
-	  driver.findElement(By.id("searchKeywords")).sendKeys("apply for a number plate");
-	  driver.findElement(By.cssSelector(".button--xxlarge > svg")).click();
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	   {
 	     WebElement element = driver.findElement(By.cssSelector(".button--xxlarge > svg"));
 	     Actions builder = new Actions(driver);

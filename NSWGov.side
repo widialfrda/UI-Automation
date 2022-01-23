@@ -4,24 +4,24 @@
   "name": "NSWGov",
   "url": "https://www.service.nsw.gov.au",
   "tests": [{
-    "id": "69e93e4c-8597-4408-9f77-212e84a64220",
+    "id": "51e65548-c83e-46f4-98c1-f1153c3fccf0",
     "name": "test_search",
     "commands": [{
-      "id": "e3f68c8f-a3c7-42d7-a7dd-85e6b13f0c5b",
+      "id": "e55cb1af-34dd-47a5-b411-17af19a70bb7",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "2a58af31-9d52-47ec-a203-0be56099dc85",
+      "id": "c172ccb4-7386-4f2e-827c-65dda0dc06f5",
       "comment": "",
       "command": "setWindowSize",
       "target": "1296x696",
       "targets": [],
       "value": ""
     }, {
-      "id": "2fc1b76b-2e9c-4d47-bf27-61b05b2d85d5",
+      "id": "9305cf93-631a-4b21-a4a6-3a49328d3004",
       "comment": "",
       "command": "click",
       "target": "name=q",
@@ -34,7 +34,7 @@
       ],
       "value": ""
     }, {
-      "id": "460e7c8e-e458-4f54-92bf-7f88e6476fb5",
+      "id": "dc91827a-6934-4dbe-be63-545ca161f453",
       "comment": "",
       "command": "type",
       "target": "name=q",
@@ -47,7 +47,7 @@
       ],
       "value": "apply for a number plate"
     }, {
-      "id": "49279be4-debc-4246-ace1-9776654ac38a",
+      "id": "16487276-738b-4b69-a842-c6a2f238c3ec",
       "comment": "",
       "command": "click",
       "target": "css=.form--global-search-group .button",
@@ -58,73 +58,7 @@
       ],
       "value": ""
     }, {
-      "id": "8bb3206d-7fdc-4f4c-9924-1355cab1ec50",
-      "comment": "",
-      "command": "click",
-      "target": "css=.button--link",
-      "targets": [
-        ["css=.button--link", "css:finder"],
-        ["xpath=//button[@type='button']", "xpath:attributes"],
-        ["xpath=//div[@id='search']/div/div/div/p/button", "xpath:idRelative"],
-        ["xpath=//p/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Search again')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "6080dd69-03ab-40ea-9bb5-68a87cc0ccaf",
-      "comment": "",
-      "command": "click",
-      "target": "id=searchKeywords",
-      "targets": [
-        ["id=searchKeywords", "id"],
-        ["css=#searchKeywords", "css:finder"],
-        ["xpath=//input[@id='searchKeywords']", "xpath:attributes"],
-        ["xpath=//div[@id='search']/div/form/div/div/input", "xpath:idRelative"],
-        ["xpath=//div/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "0f75c811-7998-4cc3-bb44-f7867eb6aa34",
-      "comment": "",
-      "command": "type",
-      "target": "id=searchKeywords",
-      "targets": [
-        ["id=searchKeywords", "id"],
-        ["css=#searchKeywords", "css:finder"],
-        ["xpath=//input[@id='searchKeywords']", "xpath:attributes"],
-        ["xpath=//div[@id='search']/div/form/div/div/input", "xpath:idRelative"],
-        ["xpath=//div/div/input", "xpath:position"]
-      ],
-      "value": "apply for a number plate"
-    }, {
-      "id": "3c20dd81-91d6-47a9-b89a-0507c2984489",
-      "comment": "",
-      "command": "click",
-      "target": "css=.button--xxlarge > svg",
-      "targets": [
-        ["css=.button--xxlarge > svg", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "86407cee-fa37-42fc-aec1-dd5f50d74f9d",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.button--xxlarge > svg",
-      "targets": [
-        ["css=.button--xxlarge > svg", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "c1ec5e01-e32a-4a7f-8331-ed3b935de91a",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "css=.button--xxlarge > svg",
-      "targets": [
-        ["css=.button--xxlarge > svg", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "9775c0cf-034f-485b-9099-0243f7d76f31",
+      "id": "428ec896-caf7-40ad-9097-1a7cd84d9cac",
       "comment": "",
       "command": "click",
       "target": "linkText=Find locations",
@@ -139,7 +73,14 @@
       ],
       "value": ""
     }, {
-      "id": "298df19b-6e10-4361-94c8-ba6897c5e14e",
+      "id": "a4f10f5a-e076-47cf-8368-2466561380a2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,91.33333587646484)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4625d26-0d4b-4000-8424-d872f6b732e4",
       "comment": "",
       "command": "click",
       "target": "id=locatorTextSearch",
@@ -152,14 +93,14 @@
       ],
       "value": ""
     }, {
-      "id": "1785e0db-21d0-49e2-b6df-e1d5286f9c13",
+      "id": "96bea9ab-1527-4a42-bfb8-0e966a077941",
       "comment": "",
       "command": "runScript",
-      "target": "window.scrollTo(0,677.3333129882812)",
+      "target": "window.scrollTo(0,555.3333129882812)",
       "targets": [],
       "value": ""
     }, {
-      "id": "cf037c6b-d813-4a13-a81f-f2d14bad5070",
+      "id": "14b292a5-44d0-4bc0-9ef1-e531af95abaf",
       "comment": "",
       "command": "type",
       "target": "id=locatorTextSearch",
@@ -172,33 +113,23 @@
       ],
       "value": "Sydney 2000"
     }, {
-      "id": "8e6a7d68-355d-4d33-b0e7-4ca15a114621",
+      "id": "7813aacd-8bb0-433c-88b7-231ea709040e",
       "comment": "",
       "command": "click",
-      "target": "css=.button--xxlarge",
+      "target": "css=.button--xxlarge > svg",
       "targets": [
-        ["css=.button--xxlarge", "css:finder"],
-        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
-        ["xpath=//div[@id='locator']/div/form/div/div/div[2]/div/button", "xpath:idRelative"],
-        ["xpath=//div/div[2]/div/button", "xpath:position"]
+        ["css=.button--xxlarge > svg", "css:finder"]
       ],
       "value": ""
     }, {
-      "id": "988f2f5c-93d0-4902-b97c-106cfdc628ba",
+      "id": "93d21e0c-173e-46df-afe2-c49db45c10aa",
       "comment": "",
       "command": "runScript",
-      "target": "window.scrollTo(0,903.3333129882812)",
+      "target": "window.scrollTo(0,1134)",
       "targets": [],
       "value": ""
     }, {
-      "id": "9af2591f-a109-4e10-bddd-53b88cef30f9",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,1177.3333740234375)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "c4fc5972-45d5-4455-8388-ffb5b03a021a",
+      "id": "544ef8fe-775b-408d-a2ef-17598e4751d6",
       "comment": "",
       "command": "click",
       "target": "linkText=Marrickville Service Centre",
@@ -213,40 +144,11 @@
       ],
       "value": ""
     }, {
-      "id": "2dd70d17-a1c0-456a-9197-b89332448d76",
+      "id": "ce81845a-8ed1-4034-a616-eb2175d4878d",
       "comment": "",
       "command": "runScript",
-      "target": "window.scrollTo(0,91.33333587646484)",
+      "target": "window.scrollTo(0,182.6666717529297)",
       "targets": [],
-      "value": ""
-    }, {
-      "id": "55ddba15-0bbf-4f0d-9eb6-1250f7889016",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "linkText=browse our services",
-      "targets": [
-        ["linkText=browse our services", "linkText"],
-        ["css=.notice > p > a", "css:finder"],
-        ["xpath=//a[contains(text(),'browse our services')]", "xpath:link"],
-        ["xpath=(//a[contains(@href, '/services')])[4]", "xpath:href"],
-        ["xpath=//div[3]/div/div[2]/p/a", "xpath:position"],
-        ["xpath=//a[contains(.,'browse our services')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "97071fe4-e137-4d6d-bdf0-b2b906eaf5a8",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "linkText=Plan ahead",
-      "targets": [
-        ["linkText=Plan ahead", "linkText"],
-        ["css=#stickyNavMenu > li:nth-child(4) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Plan ahead')]", "xpath:link"],
-        ["xpath=//ul[@id='stickyNavMenu']/li[4]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#plan-ahead')]", "xpath:href"],
-        ["xpath=//nav/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Plan ahead')]", "xpath:innerText"]
-      ],
       "value": ""
     }]
   }],
